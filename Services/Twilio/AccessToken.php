@@ -125,7 +125,7 @@ class Services_Twilio_AccessToken
             $payload['nbf'] = $this->nbf;
         }
 
-        return JWT::encode($payload, $this->secret, $algorithm, $header);
+        return TwilioJWT::encode($payload, $this->secret, $algorithm, $header);
     }
 
     public function __toString()
