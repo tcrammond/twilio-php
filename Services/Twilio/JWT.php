@@ -8,7 +8,7 @@
  *
  * @author Neuman Vong <neuman@twilio.com>
  */
-class JWT
+class TwilioJWT
 {
     /**
      * @param string      $jwt    The JWT
