@@ -108,7 +108,7 @@ class Services_Twilio_Capability
         }
 
         $payload['scope'] = implode(' ', $scopeStrings);
-        return JWT::encode($payload, $this->authToken, 'HS256');
+        return TwilioJWT::encode($payload, $this->authToken, 'HS256');
     }
 
     protected function allow($service, $privilege, $params) {
