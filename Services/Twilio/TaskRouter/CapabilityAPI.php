@@ -91,7 +91,7 @@ class Services_Twilio_TaskRouter_CapabilityAPI
 		}
 
 		$payload['policies'] = $policyStrings;
-		return JWT::encode($payload, $this->authToken, 'HS256');
+		return TwilioJWT::encode($payload, $this->authToken, 'HS256');
 	}
 }
 
